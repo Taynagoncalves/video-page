@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Bagagem</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="site-header">
+    <h1>Registro de Bagagem</h1>
+    <p class="subtitle">Registro audiovisual referente à bagagem extraviada e posteriormente recuperada.</p>
+  </header>
+
+  <!-- Área principal -->
+  <main>
+    <section class="card">
+
+      <!-- Player de vídeo -->
+      <div class="video-wrapper">
+        <video controls preload="metadata" class="video-player">
+          <source src="videos/mala.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeo.
+        </video>
+      </div>
+
+      <!-- Informações do registro -->
+      <section class="info-section">
+        <h2>Informações do registro</h2>
+        <dl class="info-list">
+          <div class="info-item">
+            <dt>Data do registro</dt>
+            <!-- EDITÁVEL: substitua pela data real -->
+            <dd>00/00/0000 (exemplo)</dd>
+          </div>
+          <div class="info-item">
+            <dt>Local</dt>
+            <!-- EDITÁVEL: substitua pelo local real -->
+            <dd>Local do registro (exemplo)</dd>
+          </div>
+          <div class="info-item">
+            <dt>Descrição</dt>
+            <!-- EDITÁVEL: substitua pela descrição real -->
+            <dd>Descrição breve do estado da bagagem no momento do registro (exemplo).</dd>
+          </div>
+        </dl>
+      </section>
+
+      <!-- Observação -->
+      <section class="note-section">
+        <h2>Observação</h2>
+        <!-- EDITÁVEL: texto da observação -->
+        <p>Este material foi disponibilizado para fins de registro e documentação do estado da bagagem após sua recuperação.</p>
+      </section>
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
