@@ -4,14 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registro de Bagagem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Cabeçalho -->
   <header class="site-header">
-    <h1>Registro de Bagagem</h1>
-    <p class="subtitle">Registro audiovisual referente à bagagem extraviada e posteriormente recuperada.</p>
+    <div class="header-inner">
+      <div class="header-icon" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="7" width="16" height="13" rx="2" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M4 12h16" stroke="currentColor" stroke-width="1.6"/>
+        </svg>
+      </div>
+      <h1>Registro de Bagagem</h1>
+      <p class="subtitle">Registro audiovisual referente à bagagem extraviada e posteriormente recuperada.</p>
+      <span class="status-badge">Caso encerrado &middot; Bagagem recuperada</span>
+    </div>
   </header>
 
   <!-- Área principal -->
@@ -29,7 +42,7 @@
       <!-- Informações do registro -->
       <section class="info-section">
         <h2>Informações do registro</h2>
-        <dl class="info-list">
+        <dl class="info-grid">
           <div class="info-item">
             <dt>Data do registro</dt>
             <!-- EDITÁVEL: substitua pela data real -->
@@ -40,7 +53,7 @@
             <!-- EDITÁVEL: substitua pelo local real -->
             <dd>Local do registro (exemplo)</dd>
           </div>
-          <div class="info-item">
+          <div class="info-item info-item--wide">
             <dt>Descrição</dt>
             <!-- EDITÁVEL: substitua pela descrição real -->
             <dd>Descrição breve do estado da bagagem no momento do registro (exemplo).</dd>
@@ -56,6 +69,10 @@
       </section>
 
     </section>
+
+    <footer class="site-footer">
+      <p>Documento gerado para fins de registro pessoal.</p>
+    </footer>
   </main>
 
   <script src="script.js"></script>
